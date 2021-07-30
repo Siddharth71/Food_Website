@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kitchenking.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .img {
+            height: 45px;
+            width: 45px;
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+
+        .navbar {
+            position: relative;
+            display: flex;
+            align-items: center;
+            top: 0px;
+
+        }
+
+        .box1 {
+            display: flex;
+            margin-top: 0px;
+        }
+
+        .box1 li {
+            padding: 25px;
+        }
+
+        ul li {
+            display: flex;
+            list-style: none;
+            font-size: 1.3rem;
+            color: aqua;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        ul li a:hover {
+
+            color: rgb(123, 230, 73);
+            background-color: black;
+        }
+
+        .navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 150px;
+            justify-content: center;
+            align-items: center;
+            font-family: cursive;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            height: 650px;
+        }
+
+        #home::before {
+            content: "";
+            background: url('img2.jpg');
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+            background-size: cover;
+            padding-left: 0px;
+
+
+        }
+
+        #home h1 {
+            color: rgb(28, 31, 218);
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: cursive;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        /*utility classes*/
+        /*services center*/
+        #services {
+            margin: 20px;
+            display: flex;
+            border: 2px solid red;
+            scale: 0.97;
+            background-color: rgb(243, 241, 241);
+            border-radius: 8px;
+            color: rgb(105, 54, 6);
+        }
+
+        #services.box {
+            border: 10px solid rgb(37, 0, 202);
+            padding: 100px;
+            border: 2px solid black;
+            margin: 5px 9px;
+            border-radius: 29px;
+            background: linear-gradient(rgb(156, 226, 156) rgb(243, 243, 177));
+            font-family: cursive;
+
+
+        }
+
+        #services.box {
+            border: 2px solid rgb(6, 3, 201);
+            height: 160px;
+            scale: 0.01;
+            padding-left: 20px;
+            font-family: cursive;
+
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            height: 344px;
+            background: url('coconut.jpg');
+            width: 100%;
+            height: 90%;
+            display: flex;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: brown;
+            font-family: cursive;
+        }
+
+
+
+
+
+        #clients img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client-item {
+            padding: 50px;
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        /*conatct section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    height: 250px;
+    background: url('footer.jpg') no-repeat center center/cover ;
+
+}
+#contact-box{
+    font-size: 20px;
+    display: flex;
+    font-family: cursive;justify-content: center;
+    text-align: center;
+    color: rgb(151, 32, 206);
+    border-radius: 10px;
+   
+}
+.form-group{
+   text-align: center;
+}
+
+.footer{
+    background: url('contact2.jpg');
+    color: rgb(53, 39, 39);
+    background: none;
+padding: 50px 450px;
+font-size: 15px;
+text-align: center;
+}
+::placeholder{
+    text-align: center;
+    color: blue;
+    font-size: 10px;
+    border-radius: 10px solid;font-family: cursive;
+    background: none;
+
+}
+        .h-primary {
+            font-size: 3.5rem;
+            padding: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: tomato;
+        }
+
+        .h-secondary {
+            font-size: 3.5rem;
+            padding: 12px;
+            font-family: cursive;
+
+        }
+
+        .btn {
+            padding: 6px 5px;
+            border: 3px rgb(156, 140, 199) solid;
+            background-color: rgb(123, 111, 168);
+            margin: 5px;
+            font-size: .0.8rem;
+            border-radius: 10px;
+            background: none;
+            cursor: pointer;
+            color: aqua;
+        }
+
+
+        /*services section*/
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <ul>
+        <nav class="navbar">
+
+            <div class="box1"> <img class="img" src="img4.jpg" alt="">
+                <li class="item"> <a href="#">Home</a> </li>
+                <li class="item"> <a href="#">About</a> </li>
+                <li class="item"> <a href="#">Contact Us</a></li>
+                <li class="item"> <a href="#">Services</a></li>
+
+
+            </div>
+        </nav>
+    </ul>
+    <section id="home">
+        <h1 class="h-primary">Welcome to KitchenKing.</h1>
+        <p>It has a tangy flavour and is used to add more taste to any dish. It is commonly used for garnishing salad,
+            papdi chaat, dahi vada, Indian lemonade, dal, and curries. Our list shows you some top and amazing chat
+            masala products with great fragrance and best in taste.</p>
+        <button class="btn">Order now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">"Our Services"</h1>
+
+        <div id="services">
+            <div class="box"><img src="img11.jpg" alt="">
+                <h2 class="h-secondary"> Food Ordering</h2>
+                <p class="center">When ordering via online, even during a busy period such as lunch or dinner time,
+                    customers would nothave a problem in contacting them and placing their orders. The customers just
+                    need to order via
+                    online and the system will automatically generate and put it on queue. </p>
+            </div>
+            <div class="box"><img src="img12.jpg" alt="">
+                <h2 class="h-secondary"> Health and Heigyne</h2>
+                <p class="center">In simple terms, health refers to a person's physical, emotional and psychological
+                    well-being. Hygiene refers to good practices that prevent disease and lead to good health,
+                    especially cleanliness, proper disposal of wastewater and drinking water supply. </p>
+            </div>
+            <div class="box"><img src="img13.jpg" alt="">
+                <h2 class="h-secondary">Customers's Call</h2>
+                <p class="center">When ordering via online, even during a busy period such as lunch or dinner time,
+                    customers would nothave a problem in contacting them and placing their orders. The customers just
+                    need to order via
+                    online and the system will automatically generate and put it on queue. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+
+            <div class="client-item">
+                <img src="win.jpg" alt="">
+                <p><b> One of the best sites ever visited.</b></p>
+            </div>
+            <div class="client-item">
+                <img src="apple.jpg" alt="">
+                <p> <b> Extremely smart and talented.Indigeous factories are best.</b></p>
+            </div>
+            <div class="client-item">
+                <img src="twitter.jpg" alt="">
+                <p> <b> Best best and the best.If you have not tried there food ..what are ayou doing then?</b></p>
+            </div>
+            <div class="client-item">
+                <img src="acer.jpg" alt="">
+                <p><b> Spices are upto the mark.One can get even the flavour of southeast asia and feel the serenity</b>
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name"> Name</label>
+                    <input type="text" name="name" id="name"
+                    placeholder="Enter your name">
+                   
+                    <label for="Phone Number"> Number</label>
+                    <input type="text" name="name" id="name"
+                    placeholder="Enter your phone number">
+                   
+                   
+                    <label for="Address"> Address</label>
+                    <input type="text" name="name" id="name"
+                    placeholder="Enter your address">
+
+                </div>
+            </form>
+        </div>
+   </section>
+<footer class="footer">
+<p><b> AT/PO Lamtibahal,Near SBI,main road ,Dist-Jharsuguda Odisha . PIN-768216</p>
+   kitchenking.com 2021 &copy; All rights reserved.</b>
+</footer>
+
+</body>
+
+</html>
